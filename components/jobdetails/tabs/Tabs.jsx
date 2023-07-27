@@ -7,8 +7,8 @@ import { set } from 'react-native-reanimated'
 
 const TabButton = ({ name, activeTab, onHandleSearchType }) => (
   <TouchableOpacity
-  style={styles.btn(name, activeTab)}
-  onPress={onHandleSearchType}
+    style={styles.btn(name, activeTab)}
+    onPress={onHandleSearchType}
   >
     <Text style={styles.btnText(name, activeTab)}>{name}</Text>
   </TouchableOpacity>
@@ -29,7 +29,7 @@ const Tabs = ({ tabs, activeTab, setActiveTab }) => {
         horizontal
         showsHorizontalScrollIndicator={false}
         keyExtractor={item => item}
-        contentContainerStyle={{ columnGap: SIZES.small / 2}}
+        contentContainerStyle={{ columnGap: SIZES.small / 2 }}
       />
     </View>
   )

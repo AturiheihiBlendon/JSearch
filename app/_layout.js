@@ -14,10 +14,10 @@ export default function Layout() {
   })
 
   const onLayoutRootView = useCallback(async () => {
-    if(FontsLoaded) {
+    if (FontsLoaded) {
       await SplashScreen.hideAsync()
     }
-  },[FontsLoaded])
+  }, [FontsLoaded])
 
   if (!FontsLoaded) return null
   return (
